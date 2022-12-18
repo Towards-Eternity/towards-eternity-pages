@@ -14,7 +14,7 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
     "https://apps.apple.com/tr/app/medresem-i-slami-e%C4%9Fitim/id1541506836?l=tr";
   document.getElementById("link-pusulam").href =
     "https://apps.apple.com/tr/app/pusulam-s%C3%BCnneti-hayata-ge%C3%A7ir/id1542536987?l=tr";
-} else if (navigator.userAgent.match(/Android/)) {
+} else if (navigator.userAgent.match(/(Android|XiaoMi)/)) {
   document.querySelectorAll(".icon-mobileapp").forEach((item) => {
     item.classList.add("fa-brands", "fa-google-play");
   });
