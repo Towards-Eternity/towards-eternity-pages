@@ -1,0 +1,21 @@
+[
+  {
+    "type": "link",
+    "default": {
+      "text": "YouTube DF",
+      "link": "https://youtube.com/sozlerkosku",
+      "visible": true
+    },
+    "en": {
+      "text": "YouTube EN",
+      "link": "https://youtube.com/TowardsEternity"
+    }
+  },
+  {
+    "type": "mobileapp",
+    "android": {
+      "text": "Twitter EN",
+      "link": "https://twitter.com/TowardsEternity"
+    }
+  }
+]
