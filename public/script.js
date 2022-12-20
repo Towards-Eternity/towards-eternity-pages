@@ -31,4 +31,6 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
     "https://play.google.com/store/apps/details?id=com.sunnah.app";
 } else {
   document.getElementById("mobileapps").style.display = "none";
+  document.getElementById("description").style.display = "none";
+
 }
