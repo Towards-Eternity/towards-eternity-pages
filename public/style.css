@@ -42,7 +42,7 @@ body {
 }
 
 #links {
-    max-width: 675px;
+    max-width: 600px;
     width: auto;
     display: block;
     margin: 27px auto;
@@ -94,6 +94,7 @@ body {
     background-repeat: no-repeat;
     background-size: 80%;
     animation: animate 3s linear var(--delay) infinite;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
@@ -799,4 +800,14 @@ body {
 
 #description {
     color: #fff;
+    text-align: center;
+}
+
+#biz-kimiz-description {
+    text-align: center;
+    display: none;
+}
+
+.description {
+    padding: 20px;
 }

@@ -34,3 +34,12 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
   document.getElementById("description").style.display = "none";
 
 }
+
+//Toggle #biz-kimiz-description when user click on #biz-kimiz
+document.getElementById("biz-kimiz").addEventListener("click", () => {
+  if(document.getElementById("biz-kimiz-description").style.display === "block")
+    document.getElementById("biz-kimiz-description").style.display = "none";
+  else
+    document.getElementById("biz-kimiz-description").style.display = "block";
+
+});
