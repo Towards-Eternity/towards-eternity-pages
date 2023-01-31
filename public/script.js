@@ -35,11 +35,11 @@ if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
 
 }
 
-//Toggle #biz-kimiz-description when user click on #biz-kimiz
+//Toggle #aboutUs when user click on #biz-kimiz
 document.getElementById("biz-kimiz").addEventListener("click", () => {
-  if(document.getElementById("biz-kimiz-description").style.display === "block")
-    document.getElementById("biz-kimiz-description").style.display = "none";
+  if(document.getElementById("aboutUs").style.display === "block")
+    document.getElementById("aboutUs").style.display = "none";
   else
-    document.getElementById("biz-kimiz-description").style.display = "block";
+    document.getElementById("aboutUs").style.display = "block";
 
 });
