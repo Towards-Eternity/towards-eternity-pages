@@ -10,14 +10,13 @@ async function showPage(lang) {
 
   // Foreach loop to showPage
   Object.keys(data).forEach((key) => {
-
     // Add profile picture
     if (key === "profilePicture") {
       // Create a new <span> element and set the id to "profilePicture"
       // and add profilePicture image in it
       const span = document.createElement("span");
       span.id = "profilePicture";
-      
+
       // Create a new <img> element and set the src attribute
       const img = document.createElement("img");
       img.src = data[key];
@@ -60,7 +59,6 @@ async function showPage(lang) {
 
       // Add the div to the body section
       document.getElementById("body").append(div);
-      
 
       Object.keys(data[key]).forEach((item) => {
         const itemData = data[key][item];
@@ -109,7 +107,8 @@ async function showPage(lang) {
         const link = document.createElement("a");
 
         // Set the text content
-        link.innerHTML = itemData.title + "<br><small>" + itemData.subtitle + "</small>";
+        link.innerHTML =
+          itemData.title + "<br><small>" + itemData.subtitle + "</small>";
 
         // Add link class
         link.classList.add("item");
@@ -148,7 +147,7 @@ async function showPage(lang) {
     // Add About Us link and description
     if (key === "aboutUs") {
       const itemData = data[key];
-      
+
       // Add span to the body section with itemData.title
       const span = document.createElement("span");
       span.id = "aboutUsBtn";
@@ -173,13 +172,9 @@ async function showPage(lang) {
       p.style.display = "none";
       p.classList.add("item");
       document.getElementById("body").append(p);
-
-
     }
-
   });
 }
-
 
 /* ----------------------------------------- */
 /* --------------- FUNCTIONS --------------- */
@@ -258,7 +253,7 @@ async function checkLanguage() {
  * If parameter is iOS, return iOS icon.
  * If parameter is Android, return Android icon.
  * Return <i> element.
- * 
+ *
  * @param {string} deviceType
  * @returns {HTMLElement} icon
  */
