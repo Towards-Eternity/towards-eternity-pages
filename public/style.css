@@ -41,14 +41,14 @@ body {
     text-decoration: none;
 }
 
-#links {
+#body {
     max-width: 600px;
     width: auto;
     display: block;
     margin: 27px auto;
 }
 
-.link {
+.item {
     position: relative;
     background-color: transparent;
     color: var(--accentColor);
@@ -67,13 +67,13 @@ body {
 }
 
 @media (hover: hover) {
-    .link:hover {
+    .item:hover {
         background-color: var(--accentColor);
         color: var(--bgColor);
     }
 }
 
-.link:active {
+.item:active {
     background-color: var(--accentColor);
     color: var(--bgColor);
 }
@@ -798,6 +798,11 @@ body {
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
 
+
+i {
+    margin-right: 6px;
+}
+
 #description {
     color: #fff;
     text-align: center;
@@ -810,4 +815,8 @@ body {
 
 .description {
     padding: 20px;
+}
+
+#footer {
+    margin-top: 30px;
 }

@@ -1,33 +1,68 @@
 {
   "tr": {
     "title": "Sözler Köşkü",
+    "hashtag": "#SonsuzOl ❤",
+    "profilePicture": "sozlerkosku.png",
+    "profilePictureAlt": "Sözler Köşkü Profil Fotoğrafı ve Logosu",
 
-    "youtubeTitle": "Sözler Köşkü",
-    "youtubeId": "sozlerkosku",
+    "linkSection": {
+      "youtubeLink": {
+        "title": "Youtube",
+        "url": "https://m.youtube.com/sozlerkosku",
+        "icon": "fa-youtube"
+      },
+      "instagramLink": {
+        "title": "Instagram",
+        "url": "https://instagram.com/sozlerkosku",
+        "icon": "fa-instagram"
+      },
+      "tiktokLink": {
+        "title": "TikTok",
+        "url": "https://tiktok.com/@sozlerkoskutiktok__",
+        "icon": "fa-tiktok"
+      }
+    },
 
-    "instagramTitle": "Instagram",
-    "instagramId": "sozlerkosku",
+    "appSection": {
+      "apps": {
+        "kopgitApp": {
+          "title": "Kopgit",
+          "subtitle": "Kuran Tefsiri Okuma Uygulaması",
+          "iosURL": "https://apps.apple.com/tr/app/kopgit-risale-inur-e%C4%9Fitimi/id1534780135?l=tr",
+          "androidURL": "https://play.google.com/store/apps/details?id=com.kopgit.risaleinur"
+        },
+        "lamelifApp": {
+          "title": "Lamelif",
+          "subtitle": "Kuran ve Tecvid Öğrenme Uygulaması",
+          "iosURL": "https://apps.apple.com/tr/app/lamelif-kuran-ve-tecvid-e%C4%9Fitim/id1541395117?l=tr",
+          "androidURL": "https://play.google.com/store/apps/details?id=com.lamelif.kuran"
+        },
+        "5te5namazApp": {
+          "title": "5te5 Namaz",
+          "subtitle": "Namaza Başlama Uygulaması",
+          "iosURL": "https://apps.apple.com/tr/app/5-te-5-namaz/id1602490524?l=tr",
+          "androidURL": "https://play.google.com/store/apps/details?id=com.sozlerkosku.beste5v2"
+        },
+        "pusulamApp": {
+          "title": "Pusulam",
+          "subtitle": "Sünnet-i Seniyye Öğrenme Uygulaması",
+          "iosURL": "https://apps.apple.com/tr/app/pusulam-s%C3%BCnneti-hayata-ge%C3%A7ir/id1542536987?l=tr",
+          "androidURL": "https://play.google.com/store/apps/details?id=com.sunnah.app"
+        },
+        "medresemApp": {
+          "title": "Medresem",
+          "subtitle": "Çevrimiçi Medrese Eğitimi Uygulaması",
+          "iosURL": "https://apps.apple.com/tr/app/medresem-i-slami-e%C4%9Fitim/id1541506836?l=tr",
+          "androidURL": "https://play.google.com/store/apps/details?id=com.sozlerkosku.internals"
+        }
+      },
 
-    "tiktokTitle": "TikTok",
-    "tiktokId": "@sozlerkoskutiktok__",
+      "description": "Size özel bu ücretsiz uygulamalarımızı indirip kendinizi geliştirip ve nice insanlara sizde paylaşıp başkalarına vesile olabilirsiniz 😊<br /><br />Kardeşim programa bu uygulamaları indirerek başlıyorsun. Aklınıza takılan sorularınızı da uygulama mesaj panelinden sorularınızı sorabilirsiniz.<br /><br /><b>Sadece Bismillah de ve Allah için başla ☝🏼</b>"
+    },
 
-    "kopgitTitle": "Kopgit",
-    "kopgitDescription": "Kuran Tefsiri Okuma Uygulaması",
-
-    "lamelifTitle": "Lamelif",
-    "lamelifDescription": "Kuran ve Tecvid Öğrenme Uygulaması",
-
-    "5te5namazTitle": "5te5 Namaz",
-    "5te5namazDescription": "Namaza Başlama Uygulaması",
-
-    "pusulamTitle": "Pusulam",
-    "pusulamDescription": "Sünnet-i Seniyye Öğrenme Uygulaması",
-
-    "medresemTitle": "Medresem",
-    "medresemDescription": "Çevrimiçi Medrese Eğitimi Uygulaması",
-
-    "description": "Size özel bu ücretsiz uygulamalarımızı indirip kendinizi geliştirip ve nice insanlara sizde paylaşıp başkalarına vesile olabilirsiniz 😊<br /><br />Kardeşim programa bu uygulamaları indirerek başlıyorsun. Aklınıza takılan sorularınızı da uygulama mesaj panelinden sorularınızı sorabilirsiniz.<br /><br /><b>Sadece Bismillah de ve Allah için başla ☝🏼</b>",
-
-    "aboutUs": "<b>Nerede Başladı Bu Milyonlara Ulaşan Yolculuk?</b><br /><br />Yıl 2010… Birkaç üniversite öğrencisi bir gaye için bir araya geldi. Günahlar karşısında eriyip yara alan ümmetin gençleri için birşeyler yapmak istediler. Dertlendiler… Dertlendiler.. Dertlendiler… Bir yolu olmalıydı milyonların kalbine dokunabilmenin. Sesini duyurabilmenin…<br /><br /><b>Bir Yolunu Bulup Her Yerde Allah'ı Anlatmak</b> Annelerin evlatları için ettikleri duanın kabulü olabilmenin bir yolu olmalıydı. Dertler duaya kuvvet verdi. Ufak bir kamera ve mikrofonla başlayan yolculuk 3 milyon aboneye sahip bir youtube kanalı oldu.<br /><br /><b>Ufak Bir Kamera ve Kayııııt!</b><br /><br />Gençlerin dilinden samimi, sempatik ve bazen de etkileyici konuşmalarla binlerin hayatı değişti. Kiminin namazına… Kiminin tesettürüne… Kiminin gayr-ı meşruyu terk etmesine vesile olundu. Bir internet kablosuyla milyonlarca eve girip Allah ve Resûlü (a.s) anlatıldı."
+    "aboutUs": {
+      "title": "Biz Kimiz?",
+      "text": "<b>Nerede Başladı Bu Milyonlara Ulaşan Yolculuk?</b><br /><br />Yıl 2010… Birkaç üniversite öğrencisi bir gaye için bir araya geldi. Günahlar karşısında eriyip yara alan ümmetin gençleri için birşeyler yapmak istediler. Dertlendiler… Dertlendiler.. Dertlendiler… Bir yolu olmalıydı milyonların kalbine dokunabilmenin. Sesini duyurabilmenin…<br /><br /><b>Bir Yolunu Bulup Her Yerde Allah'ı Anlatmak</b> Annelerin evlatları için ettikleri duanın kabulü olabilmenin bir yolu olmalıydı. Dertler duaya kuvvet verdi. Ufak bir kamera ve mikrofonla başlayan yolculuk 3 milyon aboneye sahip bir youtube kanalı oldu.<br /><br /><b>Ufak Bir Kamera ve Kayııııt!</b><br /><br />Gençlerin dilinden samimi, sempatik ve bazen de etkileyici konuşmalarla binlerin hayatı değişti. Kiminin namazına… Kiminin tesettürüne… Kiminin gayr-ı meşruyu terk etmesine vesile olundu. Bir internet kablosuyla milyonlarca eve girip Allah ve Resûlü (a.s) anlatıldı."
+    }
   }
 }
