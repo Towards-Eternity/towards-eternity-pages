@@ -36,6 +36,18 @@ body {
 
 #title {
   color: var(--accentColor);
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  display: block;
+  font-family: var(--font);
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+#languageOptions a {
+  color: var(--accentColor);
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.25;
@@ -825,4 +837,32 @@ i {
 
 #footer {
   margin-top: 30px;
+}
+
+div {
+  margin-bottom: 40px;
+}
+
+#aboutUsText {
+  display: none;
+}
+
+#linkSection {
+  font-weight: bold;
+}
+
+#appSection {
+  display: none;
+}
+
+#appSection a {
+  font-weight: bold;
+}
+
+#aboutUsButton {
+  font-weight: bold;
+}
+
+#languageOptions {
+  font-style: italic;
 }
