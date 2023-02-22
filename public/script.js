@@ -36,13 +36,13 @@ const getDeviceType = () => {
   // Get the user agent
   const userAgent = navigator.userAgent.toLowerCase() || window.opera.toLowerCase();
 
-
+  alert("Your useragent" + userAgent)
 
   // If the userAgent includes "Android" or "Xiaomi" or "MIUI" return "Android"
   if (
     userAgent.includes("android") ||
     userAgent.includes("xiaomi") ||
-    userAgent.includes("miui")
+    userAgent.includes("miuibrowser")
   ) {
     return "android";
   }
