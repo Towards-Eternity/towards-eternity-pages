@@ -36,14 +36,7 @@ const getDeviceType = () => {
   // Get the user agent
   const userAgent = navigator.userAgent.toLowerCase() || window.opera.toLowerCase();
 
-  // If the userAgent includes "Windows" or "Macintosh" or "Linux" return "Desktop"
-  if (
-    userAgent.includes("windows") ||
-    userAgent.includes("macintosh") ||
-    userAgent.includes("linux")
-  ) {
-    return "desktop";
-  }
+
 
   // If the userAgent includes "Android" or "Xiaomi" or "MIUI" return "Android"
   if (
@@ -52,6 +45,15 @@ const getDeviceType = () => {
     userAgent.includes("miui")
   ) {
     return "android";
+  }
+
+  // If the userAgent includes "Windows" or "Macintosh" or "Linux" return "Desktop"
+  if (
+    userAgent.includes("windows") ||
+    userAgent.includes("macintosh") ||
+    userAgent.includes("linux")
+  ) {
+    return "desktop";
   }
 
   // If the userAgent includes "iPhone" or "iPad" or "iPod" return "iOS"
@@ -112,11 +114,11 @@ const main = () => {
 
 // About Us Button Listener
 aboutUsButton.addEventListener("click", () => {
-    if (aboutUsText.style.display === "block") {
-        aboutUsText.style.display = "none";
-    } else {
-        aboutUsText.style.display = "block";
-    }
+  if (aboutUsText.style.display === "block") {
+    aboutUsText.style.display = "none";
+  } else {
+    aboutUsText.style.display = "block";
+  }
 });
 
 
@@ -125,7 +127,7 @@ main();
 
 
 /* Debug Codes */
-console.log("Device Type",getDeviceType());
+console.log("Device Type", getDeviceType());
 /* appSection.style.display = "block";
 appSectionLinks.forEach((link) => {
   // Foreach loop to add mobile apps
