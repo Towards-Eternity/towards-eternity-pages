@@ -50,8 +50,8 @@ const getDeviceType = () => {
   // If the userAgent includes "Windows" or "Macintosh" or "Linux" return "Desktop"
   if (
     userAgent.includes("windows") ||
-    userAgent.includes("macintosh") ||
-    userAgent.includes("linux")
+    userAgent.includes("macintosh")
+    //userAgent.includes("linux")
   ) {
     return "desktop";
   }
