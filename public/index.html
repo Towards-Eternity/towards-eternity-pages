@@ -106,6 +106,32 @@
       }
       </script>
 
+         <!-- Telegram -->
+         <a
+         class="button"
+         target="_blank"
+         href="#"
+         onclick="openTelegramChannel('sozlerkoskuresmi')"
+       >
+         <i style="color:#3d84bc" class="fab fa-telegram sosyal" ></i>
+         Telegram</a
+       >
+
+       <script>
+       function openTelegramChannel(channelUsername) {
+         var appUrl = 'tg://resolve?domain=' + channelUsername;
+         var fallbackUrl = 'https://t.me/' + channelUsername;
+       
+         // Try to open the app URL in the Telegram app
+         window.location.href = appUrl;
+       
+         // If that fails, open the fallback URL in the browser
+         setTimeout(function() {
+           window.location.href = fallbackUrl;
+         }, 100);
+       }
+       </script>
+       
 
         <!-- TikTok -->
         <!-- <a
