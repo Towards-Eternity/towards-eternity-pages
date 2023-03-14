@@ -35,6 +35,7 @@
       <div id="stars3"></div>
     </section>
 
+      <div id="copy-notification"></div>
     <!-- Header -->
     <section id="header">
       <span id="profilePicture">
@@ -53,82 +54,133 @@
     <section id="body">
       <div id="linkSection">
         <!-- Youtube -->
-        <a
-          class="item"
-          target="_blank"
-          href="https://m.youtube.com/TowardsEternity"
-        >
-          <i class="fab fa-youtube"></i>
+          <a class="button" target="_blank" href="#" onclick="openYoutubeChannel('UCPubBVDCzu7IWWnitlkEsNw')">
+          <i class="fab fa-youtube sosyal" style="color:#ff0000"></i>
           Youtube</a
         >
 
-        <!-- Instagram -->
+        <script>
+        function openYoutubeChannel(channelId) {
+          var appUrl = 'youtube://www.youtube.com/channel/' + channelId;
+          var fallbackUrl = 'https://www.youtube.com/channel/' + channelId;
+
+          // Try to open the app URL in the YouTube app
+          window.location.href = appUrl;
+
+          // If that fails, open the fallback URL in the browser
+          setTimeout(function() {
+            window.location.href = fallbackUrl;
+          }, 100);
+        }
+        </script>
+
+  
+
+          <!-- Instagram -->
         <a
-          class="item"
+          class="button"
           target="_blank"
-          href="https://www.instagram.com/towardseternity/"
+          href="#"
+          onclick="openInstagramProfile('towardseternity')"
         >
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram insta sosyal" ></i>
           Instagram</a
         >
 
+      <script>
+      function openInstagramProfile(username) {
+        var appUrl = 'instagram://user?username=' + username;
+        var fallbackUrl = 'https://www.instagram.com/' + username;
+
+        // Try to open the app URL in the Instagram app
+        window.location.href = appUrl;
+
+        // If that fails, open the fallback URL in the browser
+        setTimeout(function() {
+          window.location.href = fallbackUrl;
+        }, 100);
+      }
+      </script>
+
         <!-- TikTok -->
         <a
-          class="item"
+          class="button"
           target="_blank"
           href="https://www.patreon.com/towardsEternity"
         >
-          <i class="fab fa-patreon"></i>
+          <i class="fab fa-patreon sosyal"></i>
           Patreon</a
         >
       </div>
 
       <div id="appSection">
         <!-- Kopgit -->
-        <a class="item" target="_blank" id="kopgitApp">
+        <a class="button" target="_blank" id="kopgitApp">
+          <img src="assets/kopgit.svg" alt="Logo" class="svg-icon">
           Kopgit <br />
           <small>Quran Exegesis Reading Application</small>
+          <i class="far fa-copy copy-icon" onclick="copyLink(event)"></i>
         </a>
 
         <!-- Lamelif -->
-        <a class="item" target="_blank" id="lamelifApp">
+        <a class="button" target="_blank" id="lamelifApp">
+           <img src="assets/lamelif.svg" alt="Logo" class="svg-icon">
           Lamelif <br />
-          <small>Quran and Tajweed Learning Application</small></a
-        >
+          <small>Quran and Tajweed Learning Application</small>
+          <i class="far fa-copy copy-icon" onclick="copyLink(event)"></i>
+          </a>
 
         <!-- 5te5namaz -->
-        <a class="item" target="_blank" id="namazApp">
+        <a class="button" target="_blank" id="namazApp">
+           <img src="assets/5te5.svg" alt="Logo" class="svg-icon">
           5te5namaz <br />
           <small>Starting to Pray Application</small>
+          <i class="far fa-copy copy-icon" onclick="copyLink(event)"></i>
         </a>
 
         <!-- Pusulam -->
-        <a class="item" target="_blank" id="pusulamApp">
+        <a class="button" target="_blank" id="pusulamApp">
+           <img src="assets/pusulam.svg" alt="Logo" class="svg-icon">
           Pusulam <br />
           <small>Learning Sunnah Application</small>
+           <i class="far fa-copy copy-icon" onclick="copyLink(event)"></i>
         </a>
 
         <!-- Medresem -->
-        <a class="item" target="_blank" id="medresemApp">
+        <a class="button" target="_blank" id="medresemApp">
+           <img src="assets/sk.svg" alt="Logo" class="svg-icon">
           Medresem <br />
           <small>Online Madrasah Education Application</small>
+          <i class="far fa-copy copy-icon" onclick="copyLink(event)"></i>
         </a>
 
         <!-- Description -->
-        <p class="item">
+        <!-- <p class="item">
           You can download our free applications and improve yourself, and you
           can also share them with others and be instrumental in helping many
           people 😊<br /><br />You start the program by downloading these
           applications. You can also ask your questions through the application
           message panel if you have any questions.<br /><br />
           <b>Just say Bismillah and start for the sake of Allah ☝🏼</b>
-        </p>
+        </p> -->
       </div>
+         <script>
+        function toggleAbout(){
+        
+          let at = document.getElementById("aboutUsText");
+          
+          if(at.style.display == 'block'){
+            at.style.display = 'none'
+        }else if(at.style.display == 'none'){
+            at.style.display = 'block'
+        }
+        }
+      </script>
 
       <div id="aboutusSection">
-        <span class="item" id="aboutUsButton">Who We Are?</span>
+        <span onclick="toggleAbout()" class="button" id="aboutUsButton">Who We Are?</span>
 
-        <p class="item" id="aboutUsText">
+        <p style="display:none" class="button" id="aboutUsText">
           <b>Where Did This Journey Reaching Millions Begin?</b><br /><br />Year
           2010... A few university students came together for a purpose. They
           wanted to do something for the young people of the ummah who were
@@ -155,9 +207,42 @@
 
     <!-- Footer -->
     <section id="footer">
-      <span id="hashtag">#BeEternal ❤</span>
+      <span id="hashtag">#BeEternal</span>
     </section>
+    <div class="share-button">
+      <button class="share-toggle">
+        <i class="fas fa-share"></i>
+      </button>
+    </div>
+    <div class="share-options">
+      <!-- <a href="#" class="facebook"><i class="fab fa-facebook"></i><span>Share on Facebook</span></a> -->
+      <!-- <a href="#" class="twitter"><i class="fab fa-twitter"></i><span>Share on Twitter</span></a> -->
+      <a target="_blank" href="whatsapp://send/?text=Towards%20Eternity%20Apps%20and%20Links%20Here!%20https://p.sozlerkosku.com/en.html" class="whatsapp"><i class="fab fa-whatsapp"></i><span>Share on Whatsapp</span></a>
+      <a target="_blank" href="https://t.me/share/url?url=https://p.sozlerkosku.com/en.html&text=Towards%20Eternity%20Apps%20and%20Links%20Here!%20" class="telegram"><i class="fab fa-telegram"></i><span>Share on Telegram</span></a>
+      <button class="copy-link"><i class="far fa-copy"></i><span>Copy Link</span></button>
 
+
+      <!-- <a href="#" class="email"><i class="far fa-envelope"></i><span>Share via Email</span></a> -->
+    </div>
+    
+        <script>
+      const shareToggle = document.querySelector(".share-toggle");
+      const shareOptions = document.querySelector(".share-options");
+
+      shareToggle.addEventListener("click", function () {
+        shareOptions.classList.toggle("active");
+        
+      });
+
+      document.addEventListener("click", function (event) {
+        const isClickInside = shareOptions.contains(event.target);
+        const isClickToggle = event.target.closest(".share-toggle");
+        if (!isClickInside && !isClickToggle) {
+          shareOptions.classList.remove("active");
+         
+        }
+      });
+    </script>
     <!-- Add async Translate Script: translate.js -->
     <script async type="text/javascript" src="script.js"></script>
 

@@ -153,6 +153,32 @@ async function copyLink(event) {
   }
 }
 
+async function copyLinkTR(event) {
+  event.preventDefault();
+
+  const linkElement = event.target.parentNode;
+  const url = linkElement.getAttribute('href');
+
+ 
+  try {
+    // Write the URL to the clipboard
+    await navigator.clipboard.writeText(url);
+
+    // Show the floating notification
+    const notificationElement = document.getElementById('copy-notification');
+    notificationElement.innerHTML = 'Kopyalandı!';
+    notificationElement.style.display = 'block';
+    
+    // Hide the floating notification after 3 seconds
+    setTimeout(() => {
+      notificationElement.style.display = 'none';
+    }, 1000);
+  } catch (error) {
+    console.error('Hata! Kopyalanamadı:', error);
+  }
+}
+
+
 
 
 // Call the main function
