@@ -8,20 +8,129 @@
   --delay: 0.3s;
 }
 
+
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
   font-family: var(--font);
-  background: radial-gradient(
+
+  background: linear-gradient(to bottom, #EF5329, #F5AF32);
+  /* background: radial-gradient(
     ellipse at bottom,
     var(--bgColor) 0%,
     var(--bgColor2) 100%
   );
-  opacity: 0;
+   */
+  /* opacity: 0;
   animation: 1s ease-out var(--delay) 1 transitionAnimation; /* duration/timing-function/delay/iterations/name */
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; 
 }
+
+title {
+  color: #FFFFFF;
+}
+
+.insta{
+  color: #ffffff;
+  background: linear-gradient(to bottom, #8143b2, #ff0000,#e4864e);
+  border-radius: 0%;
+
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000 !important;
+  
+  transition: all 0.3s ease;
+  width: 90%; /* Yüzde olarak genişlik */
+  text-align: center; /* İçeriği merkezle */
+
+
+  position: relative;
+  
+  
+  border: solid var(--accentColor) 2px;
+  /* border-radius: 10px; */
+  font-size: 1rem;
+  text-align: center;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px; /* 17px */
+
+
+  /* AAA */
+  justify-content: space-between;
+
+}
+
+.button .svg-icon {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.button small {
+  display: block;
+}
+
+.button .copy-icon {
+  color: #818181;
+  cursor: pointer;
+}
+
+
+
+.button i.copy-icon {
+  display: inline-block; /* Satır içi elementi */
+  position: absolute; /* Pozisyonunu mutlak yap */
+  right: 15px; /* Sol kenara yasla */
+  top: 50%; /* Dikey hizalamayı ayarla */
+  transform: translateY(-50%); /* Dikey hizalamayı ayarla */
+  padding-right: 10px; /* İkon ile buton kenarları arasında boşluk bırak */
+  font-size: 20px;
+}
+
+
+.button img {
+  display: inline-block; /* Satır içi elementi */
+  position: absolute; /* Pozisyonunu mutlak yap */
+  left: 15px; /* Sol kenara yasla */
+  top: 50%; /* Dikey hizalamayı ayarla */
+  transform: translateY(-50%); /* Dikey hizalamayı ayarla */
+  padding-right: 10px; /* İkon ile buton kenarları arasında boşluk bırak */
+  font-size: 20px;
+}
+
+
+
+
+
+.button span {
+  display: inline-block; /* Satır içi elementi */
+  vertical-align: middle; /* Dikey hizalama */
+  font-size: 16px;
+}
+
+.button i {
+  margin-right: 5px; 
+  font-size: 20px;
+}
+
+.button span {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+
+a {
+  text-decoration: none !important;
+}
+
 
 #profilePicture,
 #profilePicture img {
@@ -35,7 +144,7 @@ body {
 }
 
 #title {
-  color: var(--accentColor);
+  color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 1.5;
@@ -98,7 +207,8 @@ body {
 #hashtag {
   position: relative;
   padding-bottom: 20px;
-  color: var(--accentColor);
+  /* color: var(--accentColor); */
+  color: #FFFFFF;
   font-size: 1rem;
   display: block;
   font-family: var(--font);
@@ -870,3 +980,186 @@ div {
 .animated-background div {
   margin-bottom: 0px;
 }
+
+
+
+
+
+/* Share Button  */
+
+.share-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  /* rest of the styles */
+}
+
+.share-toggle {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ff5722;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.share-toggle:hover {
+  background-color: #f44336;
+}
+
+
+.share-options {
+  position: fixed;
+  bottom: 0; /* Position the container at the bottom of the screen */
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 95%;
+  height: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
+  transition: transform 0.3s ease;
+  display: none;
+}
+
+.share-options.active {
+  display: flex;
+  transform: translateX(-50%) translateY(0); /* Slide the container up */
+}
+
+
+.share-options.active {
+  pointer-events: auto;
+  transition: opacity 0.3s ease, pointer-events 0s linear 0s;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.share-button:hover .share-options {
+  right: 60px;
+  z-index: 1000;
+}
+
+
+
+.share-options a {
+  width: 80%;
+  padding: 10px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+    
+}
+
+.share-options a i {
+  margin-right: 10px;
+}
+
+.share-options a span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.share-options a.facebook {
+  background-color: #3b5998;
+}
+
+.share-options a.twitter {
+  background-color: #00aced;
+}
+
+.share-options a.whatsapp {
+  background-color: #25d366;
+}
+
+.share-options a.telegram {
+  background-color: #0088cc; /* Set the background color to Telegram blue */
+  color: white; /* Set the text color to white */
+}
+
+.share-options a.email {
+  background-color: #2196f3;
+}
+
+/* Kopyalama butonu */
+.share-options button.copy-link {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.share-options button.copy-link:hover {
+  background-color: #f0f0f0;
+}
+
+.share-options button.copy-link i {
+  color: #818181;
+  margin-right: 10px;
+}
+
+.share-options button.copy-link span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+
+small {
+  font-weight: 500;
+}
+
+
+#copy-notification {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(76, 175, 80, 0.8);
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  display: none;
+  border-radius: 8px;
+  width: 33%;
+  margin: 10px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.button i.sosyal {
+  display: inline-block; /* Satır içi elementi */
+  position: absolute; /* Pozisyonunu mutlak yap */
+  left: 15px; /* Sol kenara yasla */
+  top: 50%; /* Dikey hizalamayı ayarla */
+  transform: translateY(-50%); /* Dikey hizalamayı ayarla */
+  margin-right: 10px; /* İkon ile buton kenarları arasında boşluk bırak */
+  font-size: 20px;
+}
+/* .share-options a:hover,
+.share-options button:hover {
+  transform: scale(1.2);
+} */

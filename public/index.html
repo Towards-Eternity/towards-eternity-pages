@@ -29,11 +29,15 @@
 
   <body>
     <!-- Animated Background -->
-    <section class="animated-background">
+    <!-- <section class="animated-background">
       <div id="stars1"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-    </section>
+    </section> -->
+  
+    
+
+    <div id="copy-notification"></div>
 
     <!-- Header -->
     <section id="header">
@@ -53,82 +57,141 @@
     <section id="body">
       <div id="linkSection">
         <!-- Youtube -->
-        <a
-          class="item"
-          target="_blank"
-          href="https://m.youtube.com/sozlerkosku"
-        >
-          <i class="fab fa-youtube"></i>
+
+        <a class="button" target="_blank" href="#" onclick="openYoutubeChannel('UCN5t14BCdTIQ-116TxJuBMg')">
+          <i class="fab fa-youtube sosyal" style="color:#ff0000"></i>
           Youtube</a
         >
 
+
+        <script>
+        function openYoutubeChannel(channelId) {
+          var appUrl = 'youtube://www.youtube.com/channel/' + channelId;
+          var fallbackUrl = 'https://www.youtube.com/channel/' + channelId;
+
+          // Try to open the app URL in the YouTube app
+          window.location.href = appUrl;
+
+          // If that fails, open the fallback URL in the browser
+          setTimeout(function() {
+            window.location.href = fallbackUrl;
+          }, 100);
+        }
+        </script>
+
+
         <!-- Instagram -->
         <a
-          class="item"
+          class="button"
           target="_blank"
-          href="https://www.instagram.com/sozlerkosku/"
+          href="#"
+          onclick="openInstagramProfile('sozlerkosku')"
         >
-          <i class="fab fa-instagram"></i>
+          <i class="fab fa-instagram insta sosyal" ></i>
           Instagram</a
         >
 
+      <script>
+      function openInstagramProfile(username) {
+        var appUrl = 'instagram://user?username=' + username;
+        var fallbackUrl = 'https://www.instagram.com/' + username;
+
+        // Try to open the app URL in the Instagram app
+        window.location.href = appUrl;
+
+        // If that fails, open the fallback URL in the browser
+        setTimeout(function() {
+          window.location.href = fallbackUrl;
+        }, 100);
+      }
+      </script>
+
+
         <!-- TikTok -->
-        <a
-          class="item"
+        <!-- <a
+          class="button"
           target="_blank"
           href="https://www.tiktok.com/@sozlerkosku"
         >
           <i class="fab fa-tiktok"></i>
           TikTok</a
-        >
+        > -->
       </div>
 
       <div id="appSection">
         <!-- Kopgit -->
-        <a class="item" target="_blank" id="kopgitApp">
-          Kopgit <br />
-          <small>Kuran Tefsiri Okuma Uygulaması</small>
+        <a class="button" target="_blank" id="kopgitApp">
+          <img src="assets/kopgit.svg" alt="Logo" class="svg-icon">
+          
+            Kopgit <br />
+            <small>Kuran Tefsiri Okuma Uygulaması</small>
+          
+          <i class="far fa-copy copy-icon" onclick="copyLink(event)"></i>
         </a>
 
+      
+
         <!-- Lamelif -->
-        <a class="item" target="_blank" id="lamelifApp">
+        <a class="button" target="_blank" id="lamelifApp">
+          <img src="assets/lamelif.svg" alt="Logo" class="svg-icon">
           Lamelif <br />
-          <small>Kuran ve Tecvid Öğrenme Uygulaması</small></a
-        >
+          <small>Kuran ve Tecvid Öğrenme Uygulaması</small>
+          <i class="far fa-copy copy-icon" onclick="copyLink(event)"></i>
+     
+          </a>
 
         <!-- 5te5namaz -->
-        <a class="item" target="_blank" id="namazApp">
+        <a class="button" target="_blank" id="namazApp">
+          <img src="assets/5te5.svg" alt="Logo" class="svg-icon">
           5te5namaz <br />
           <small>Namaza Başlama Uygulaması</small>
+          <i class="far fa-copy copy-icon" onclick="copyLink(event)"></i>
         </a>
 
         <!-- Pusulam -->
-        <a class="item" target="_blank" id="pusulamApp">
+        <a class="button" target="_blank" id="pusulamApp">
+          <img src="assets/pusulam.svg" alt="Logo" class="svg-icon">
           Pusulam <br />
           <small>Sünnet-i Seniyye Öğrenme Uygulaması</small>
+          <i class="far fa-copy copy-icon onclick="copyLink(event)""></i>
         </a>
 
         <!-- Medresem -->
-        <a class="item" target="_blank" id="medresemApp">
+        <a class="button" target="_blank" id="medresemApp">
+          <img src="assets/sk.svg" alt="Logo" class="svg-icon">
           Medresem <br />
           <small>Çevrimiçi Medrese Eğitimi Uygulaması</small>
+          <i class="far fa-copy copy-icon" onclick="copyLink(event)"></i>
         </a>
 
         <!-- Description -->
-        <p class="item">
+        <!-- <p class="button">
           Size özel bu ücretsiz uygulamalarımızı indirip kendinizi geliştirip ve
           nice insanlara sizde paylaşıp başkalarına vesile olabilirsiniz 😊<br /><br />Kardeşim
           programa bu uygulamaları indirerek başlıyorsun. Aklınıza takılan
           sorularınızı da uygulama mesaj panelinden sorularınızı
           sorabilirsiniz.<br /><br />
           <b>Sadece Bismillah de ve Allah için başla ☝🏼</b>
-        </p>
+        </p> -->
       </div>
 
-      <div id="aboutusSection">
-        <span class="item" id="aboutUsButton">Biz Kimiz?</span>
+      <script>
+        function toggleAbout(){
+        
+          let at = document.getElementById("aboutUsText");
+          
+          if(at.style.display == 'block'){
+            at.style.display = 'none'
+        }else if(at.style.display == 'none'){
+            at.style.display = 'block'
+        }
+        }
+      </script>
 
-        <p class="item" id="aboutUsText">
+      <div id="aboutusSection">
+        <span onclick="toggleAbout()" class="button" id="aboutUsButton">Biz Kimiz?</span>
+
+        <p style="display:none" class="button" id="aboutUsText">
           <b>Nerede Başladı Bu Milyonlara Ulaşan Yolculuk?</b><br /><br />Yıl
           2010… Birkaç üniversite öğrencisi bir gaye için bir araya geldi.
           Günahlar karşısında eriyip yara alan ümmetin gençleri için birşeyler
@@ -148,13 +211,49 @@
           (a.s) anlatıldı.
         </p>
       </div>
+
+ 
     </section>
 
     <!-- Footer -->
     <section id="footer">
-      <span id="hashtag">#SonsuzOl ❤</span>
+      <span id="hashtag">#SonsuzOl</span>
     </section>
+    <div class="share-button">
+      <button class="share-toggle">
+        <i class="fas fa-share"></i>
+      </button>
+    </div>
+    <div class="share-options">
+      <!-- <a href="#" class="facebook"><i class="fab fa-facebook"></i><span>Share on Facebook</span></a> -->
+      <!-- <a href="#" class="twitter"><i class="fab fa-twitter"></i><span>Share on Twitter</span></a> -->
+      <a target="_blank" href="whatsapp://send/?text=S%C3%B6zler%20K%C3%B6%C5%9Fk%C3%BC%20Uygulamalar%C4%B1%20ve%20Linkleri%20Burada!%20https://p.sozlerkosku.com" class="whatsapp"><i class="fab fa-whatsapp"></i><span>Whatsapp'ta Paylaş</span></a>
+      <a target="_blank" href="https://t.me/share/url?url=https://p.sozlerkosku.com&text=S%C3%B6zler%20K%C3%B6%C5%9Fk%C3%BC%20Uygulamalar%C4%B1%20ve%20Linkleri%20Burada!" class="telegram"><i class="fab fa-telegram"></i><span>Telegram'da Paylaş</span></a>
+      <button class="copy-link"><i class="far fa-copy"></i><span>Linki Kopyala</span></button>
 
+
+      <!-- <a href="#" class="email"><i class="far fa-envelope"></i><span>Share via Email</span></a> -->
+    </div>
+    
+
+    <script>
+      const shareToggle = document.querySelector(".share-toggle");
+      const shareOptions = document.querySelector(".share-options");
+
+      shareToggle.addEventListener("click", function () {
+        shareOptions.classList.toggle("active");
+        
+      });
+
+      document.addEventListener("click", function (event) {
+        const isClickInside = shareOptions.contains(event.target);
+        const isClickToggle = event.target.closest(".share-toggle");
+        if (!isClickInside && !isClickToggle) {
+          shareOptions.classList.remove("active");
+         
+        }
+      });
+    </script>
     <!-- Add async Translate Script: translate.js -->
     <script async type="text/javascript" src="script.js"></script>
 
