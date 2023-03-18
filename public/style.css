@@ -1159,6 +1159,16 @@ small {
   margin-right: 10px; /* İkon ile buton kenarları arasında boşluk bırak */
   font-size: 20px;
 }
+
+.appSectionHeader {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 /* .share-options a:hover,
 .share-options button:hover {
   transform: scale(1.2);
